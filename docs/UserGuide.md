@@ -4,41 +4,31 @@
   pageNav: 3
 ---
 
-# AB-3 User Guide
+# Advanced&Efficient (A&E) User Guide
 
-AddressBook Level 3 (AB3) is a **desktop app for managing contacts, optimized for use via a  Line Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, AB3 can get your contact management tasks done faster than traditional GUI apps.
+Advanced&Efficient (A&E) is a Command-Line Interface (CLI) focussed app that helps Emergency Department (ED) doctors log patient reports and connect them to the relevant departments. It is suited for users who type fast and prefer typing over other modes of inputs.
 
 <!-- * Table of Contents -->
+- [Quick-start](#quick-start)
+- [Features](#features)
+  - [Viewing help : `help`](#viewing-help--help)
+  - [Listing all patients: `list patients`](#list-all-patients--list)
+  - [Delete a patient: `delete`](#delete-a-patient--delete)
+  - [Viewing a patient record : `view`](#subsection-1-1)
+  - [Edit a patient record : `record`](#subsection-1-1)
+  - [Assign patient to department : `assign`](#subsection-1-1)
+  - [Exiting the program : `exit`](#exiting-the-program--exit)
+- [FAQ](#FAQ)
+- [Known Issues](#Known-issues)
+- [Command summary](#Command-summary)
+
 <page-nav-print />
 
 --------------------------------------------------------------------------------------------------------------------
 
 ## Quick start
 
-1. Ensure you have Java `11` or above installed in your Computer.
-
-1. Download the latest `addressbook.jar` from [here](https://github.com/se-edu/addressbook-level3/releases).
-
-1. Copy the file to the folder you want to use as the _home folder_ for your AddressBook.
-
-1. Open a command terminal, `cd` into the folder you put the jar file in, and use the `java -jar addressbook.jar` command to run the application.<br>
-   A GUI similar to the below should appear in a few seconds. Note how the app contains some sample data.<br>
-   ![Ui](images/Ui.png)
-
-1. Type the command in the command box and press Enter to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
-   Some example commands you can try:
-
-   * `list` : Lists all contacts.
-
-   * `add n/John Doe p/98765432 e/johnd@example.com a/John street, block 123, #01-01` : Adds a contact named `John Doe` to the Address Book.
-
-   * `delete 3` : Deletes the 3rd contact shown in the current list.
-
-   * `clear` : Deletes all contacts.
-
-   * `exit` : Exits the app.
-
-1. Refer to the [Features](#features) below for details of each command.
+###  [coming soon]
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -68,11 +58,33 @@ AddressBook Level 3 (AB3) is a **desktop app for managing contacts, optimized fo
 
 ### Viewing help : `help`
 
-Shows a message explaning how to access the help page.
+Shows a message explaining how to access the help page.
 
 ![help message](images/helpMessage.png)
 
 Format: `help`
+
+
+
+
+### List All Patients: `list`
+
+Lists all patients in the system.
+
+Format: `list patients`
+
+![UG_listPatients.png](images%2Fug%2FUG_listPatients.png)
+
+### Delete a Patient: `delete`
+
+Deletes the patient with the specified IC number from the system. Inputs are not case-sensitive (e.g., `T1234567A` is the same as `t1234567a`). The order of the inputs does not matter.
+
+Format: `delete i/IC_NUMBER`
+
+Examples:
+
+- `delete i/T1234567A`
+- `delete i/T2468012a`
 
 
 ### Adding a person: `add`
@@ -145,11 +157,17 @@ Examples:
 * `list` followed by `delete 2` deletes the 2nd person in the address book.
 * `find Betsy` followed by `delete 1` deletes the 1st person in the results of the `find` command.
 
-### Clearing all entries : `clear`
+### Assigning a patient to a department : `assign`
 
-Clears all entries from the address book.
+Assigns the patient to relevant doctor.
 
-Format: `clear`
+Format: `assign i/IC_NUMBER d/DEPARTMENT`
+* All fields are compulsory
+* Inputs are case-insensitive e.g. `T1234567A` is the same as `t1234567a`
+* `DEPARTMENT` must adhere to British spelling conventions
+
+Examples:
+* `assign i/T02012345A d/cardiology`
 
 ### Exiting the program : `exit`
 
@@ -179,14 +197,13 @@ _Details coming soon ..._
 
 ## FAQ
 
-**Q**: How do I transfer my data to another Computer?<br>
-**A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous AddressBook home folder.
+###  [coming soon]
 
 --------------------------------------------------------------------------------------------------------------------
 
 ## Known issues
 
-1. **When using multiple screens**, if you move the application to a secondary screen, and later switch to using only the primary screen, the GUI will open off-screen. The remedy is to delete the `preferences.json` file created by the application before running the application again.
+###  [coming soon]
 
 --------------------------------------------------------------------------------------------------------------------
 
