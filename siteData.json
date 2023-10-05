@@ -114,6 +114,8 @@
         "viewing-help-help": "Viewing help : help",
         "list-all-patients-list": "List All Patients: list",
         "delete-a-patient-delete": "Delete a Patient: delete",
+        "viewing-a-patient-view": "Viewing a patient: view",
+        "editing-a-patient-record-record": "Editing a patient record: record",
         "adding-a-person-add": "Adding a person: add",
         "listing-all-persons-list": "Listing all persons : list",
         "editing-a-person-edit": "Editing a person : edit",
