@@ -1,10 +1,10 @@
 package seedu.address.model.patient;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
 import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.AppUtil.checkArgument;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 /**
  * Represents a Patient's Birthday in the address book.
@@ -15,7 +15,6 @@ public class Birthday {
             "Birth dates should only contain numbers in valid dd/MM/yyyy format";
     public static final String VALIDATION_REGEX = "\\d{1,2}\\/\\d{1,2}\\/\\d{2,4}";
     public final LocalDate value;
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     /**
      * Constructs a {@code Birthday}.
@@ -23,6 +22,7 @@ public class Birthday {
      * @param birthdate A valid Birthday.
      */
     public Birthday(String birthdate) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         requireNonNull(birthdate);
         checkArgument(isValidBirthdate(birthdate), MESSAGE_CONSTRAINTS);
         value = LocalDate.parse(birthdate, formatter);
