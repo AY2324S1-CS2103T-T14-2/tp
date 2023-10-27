@@ -53,6 +53,7 @@
         "implementation": "Implementation",
         "view-patient-feature": "View patient feature",
         "edit-record-feature": "Edit Record feature",
+        "assign-department-feature": "Assign department feature",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
         "proposed-data-archiving": "[Proposed] Data archiving",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
