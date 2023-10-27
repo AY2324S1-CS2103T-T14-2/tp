@@ -64,7 +64,11 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-patient": "Deleting a patient",
-        "saving-data": "Saving data"
+        "editing-a-patient": "Editing a patient",
+        "class-birthday-and-testing": "Class Birthday and Testing",
+        "explanation": "Explanation:",
+        "saving-data": "Saving data",
+        "explanation-2": "Explanation:"
       },
       "headingKeywords": {}
     },
