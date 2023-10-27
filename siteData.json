@@ -70,7 +70,8 @@
         "class-birthday-and-testing": "Class Birthday and Testing",
         "explanation": "Explanation:",
         "saving-data": "Saving data",
-        "explanation-2": "Explanation:"
+        "explanation-2": "Explanation:",
+        "class-record-json-storage-format": "Class Record JSON Storage Format"
       },
       "headingKeywords": {}
     },
