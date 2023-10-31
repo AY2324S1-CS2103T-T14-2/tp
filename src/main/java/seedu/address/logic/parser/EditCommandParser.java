@@ -15,14 +15,13 @@ import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG;
 import java.util.*;
 import java.util.stream.Stream;
 
-import seedu.address.commons.core.index.Index;
 import seedu.address.logic.commands.AddCommand;
 import seedu.address.logic.commands.EditCommand;
 import seedu.address.logic.commands.EditCommand.EditPatientDescriptor;
-import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.patient.IcNumber;
 import seedu.address.model.tag.Tag;
+
 
 
 /**
